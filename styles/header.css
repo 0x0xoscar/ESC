@@ -1,0 +1,127 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+header {
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-bottom: 35px;
+  height: 144px;
+  background-color: #011827;
+}
+header h1 {
+  height: 84px;
+  width: 78px;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+}
+header menu {
+  display: none;
+}
+header .header__logo {
+  gap: 13px;
+  display: flex;
+  flex-shrink: 0;
+}
+
+@media screen and (min-width: 770px) {
+  header {
+    height: 216px;
+  }
+  header h1 {
+    margin-top: 61px;
+    height: 47px;
+    width: 404px;
+    font-size: 40px;
+    font-weight: 700;
+  }
+  header .header__logo {
+    gap: 24px;
+    display: flex;
+    flex-shrink: 0;
+  }
+  header .header__logo img {
+    margin-top: 26px;
+    height: 82px;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+  nav menu {
+    margin-top: 35px;
+    gap: 114px;
+    display: flex;
+  }
+  nav menu li {
+    list-style: none;
+  }
+  nav menu a {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  nav menu a:hover {
+    color: #8acfe5;
+  }
+}/*# sourceMappingURL=header.css.map */

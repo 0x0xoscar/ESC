@@ -1,0 +1,156 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+.popular__carousel article {
+  flex: 0 0 auto;
+  width: 363px;
+  height: 446px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  scroll-snap-align: center;
+}
+.popular__carousel article h2 {
+  font-size: 28px;
+  font-weight: 400;
+  margin-top: 12px;
+  padding-left: 17px;
+  margin-bottom: 2px;
+}
+
+.popular__carousel-container {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.carousel {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 20px;
+}
+
+.popular__rating {
+  display: flex;
+}
+
+.popular__stars {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 9px;
+  padding-left: 18px;
+}
+.popular__stars img {
+  margin-right: 4px;
+}
+
+.popular__paragraph {
+  width: 328px;
+  height: 63px;
+  margin-top: 18px;
+  padding-left: 18px;
+  margin-bottom: 11px;
+}
+.popular__paragraph p {
+  width: 328px;
+  height: 63px;
+  line-height: 20px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.popular__button {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 18px;
+}
+.popular__button button {
+  border-radius: 4px;
+  background: #e3170a;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  padding: 12px 35px;
+}
+
+@media screen and (min-width: 770px) {
+  .popular__carousel {
+    margin-bottom: 87px;
+  }
+  .popular__rating {
+    display: flex;
+    justify-content: space-between;
+  }
+  .popular__participants {
+    padding-right: 11px;
+  }
+  .middle {
+    margin-left: 42px;
+    margin-right: 42px;
+  }
+}/*# sourceMappingURL=carousel.css.map */

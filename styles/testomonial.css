@@ -1,0 +1,131 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+.testomonial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 105px;
+}
+.testomonial img {
+  flex-shrink: 0;
+  margin-right: 22px;
+}
+.testomonial blockquote {
+  width: 343px;
+  height: 139px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.testomonial blockquote .testomonial__quote {
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 400;
+}
+.testomonial blockquote .testomonial__name {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (min-width: 770px) {
+  .testomonial {
+    margin-top: 106px;
+    margin-bottom: 108px;
+    padding-left: 110px;
+    padding-right: 107px;
+    gap: 21px;
+  }
+  .testomonial picture img {
+    width: 96px;
+    height: 96px;
+  }
+  .testomonial .testomonial__quote {
+    width: 407px;
+    height: 84px;
+    line-height: 30px;
+  }
+  .testomonial .testomonial__name {
+    margin-top: 25px;
+    width: 272px;
+    height: 42px;
+  }
+  .testomonial blockquote {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .hidden {
+    display: flex;
+  }
+  .shown {
+    display: flex;
+    margin-right: 21px;
+  }
+}/*# sourceMappingURL=testomonial.css.map */

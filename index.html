@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="header__logo">
+        <img src="assets/images/esc_logo.png" alt="Hacker Escape Room's Logo" />
+        <h1>Hacker Escape Rooms</h1>
+      </div>
+      <nav>
+        <menu>
+          <li>
+            <a href="#" target="_blank" rel="noopener noreferrer"
+              >Play online</a
+            >
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="noopener noreferrer"
+              >Play on-site</a
+            >
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="noopener noreferrer">The story</a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="noopener noreferrer">Contact us</a>
+          </li>
+        </menu>
+      </nav>
+    </header>
+    <picture class="hero">
+      <source srcset="assets/images/image.png" media="(min-width: 721px)" />
+      <source srcset="assets/images/a.png" media="(min-width: 481px)" />
+      <img
+        src="assets/images/hero_mobile.png"
+        alt="A hacker with a hoodie on looking at his screens that shows terminals running"
+      />
+    </picture>
+    <main>
+      <div class="flex-group">
+        <button class="on-site-btn">On-site challenges</button>
+        <button class="online-challenges-btn">Online challenges</button>
+      </div>
+
+      <section class="testomonial">
+        <div class="shown">
+          <picture>
+            <img src="assets/images/john_doe.png" alt="Portrait of John Doe" />
+          </picture>
+          <blockquote>
+            <p class="testomonial__quote">
+              This is a quote about how amazing this place is and how much fun
+              me and my friends had when we tried it
+            </p>
+            <p class="testomonial__name">
+              John Doe, visited us in September 2021
+            </p>
+          </blockquote>
+        </div>
+        <div class="hidden">
+          <picture>
+            <img src="assets/images/john_doe.png" alt="Portrait of John Doe" />
+          </picture>
+          <blockquote>
+            <p class="testomonial__quote">
+              This is a quote about how amazing this place is and how much fun
+              me and my friends had when we tried it
+            </p>
+            <p class="testomonial__name">
+              John Doe, visited us in September 2021
+            </p>
+          </blockquote>
+        </div>
+      </section>
+
+      <h2 class="popular-title">Popular challenges right now</h2>
+
+      <section class="popular__carousel">
+        <div class="popular__carousel-container">
+          <div class="carousel">
+            <article>
+              <picture>
+                <img
+                  src="assets/images/card_mobile.png"
+                  alt="A hacker with a hoodie on looking at his screens that shows terminals running"
+                />
+              </picture>
+              <h2>Title of room (on-site)</h2>
+              <div class="popular__rating">
+                <div class="popular__stars">
+                  <img
+                    src="assets/images/star_filled.png"
+                    alt="Filled red star"
+                  />
+                  <img
+                    src="assets/images/star_filled.png"
+                    alt="Filled red star"
+                  />
+                  <img
+                    src="assets/images/star_filled.png"
+                    alt="Filled red star"
+                  />
+                  <img
+                    src="assets/images/star_filled.png"
+                    alt="Filled red star"
+                  />
+                  <img
+                    src="assets/images/star_filled.png"
+                    alt="Filled red star"
+                  />
+                </div>
+                <div class="popular__participants">
+                  <span>2-6 participants</span>
+                </div>
+              </div>
+              <div class="popular__paragraph">
+                <p>
+                  Praeterea, ex culpa non invenies unum aut non accusatis unum.
+                  Et nihil inuitam. Nemo nocere tibi erit, et non inimicos, et
+                </p>
+              </div>
+              <div class="popular__button">
+                <button>Book this room</button>
+              </div>
+            </article>
+
+            <article class="middle">
+              <picture>
+                <img
+                  src="assets/images/card_mobile.png"
+                  alt="A hacker with a hoodie on looking at his screens that shows terminals running"
+                />
+              </picture>
+              <h2>Title of room (on-site)</h2>
+              <div class="popular__rating">
+                <div class="popular__stars">
+                  <img
+                    src="assets/images/star_filled.png"
+                    alt="Filled red star"
+                  />
+                  <img
+                    src="assets/images/star_filled.png"
+                    alt="Filled red star"
+                  />
+                  <img
+                    src="assets/images/star_filled.png"
+                    alt="Filled red star"
+                  />
+                  <img
+                    src="assets/images/star_filled.png"
+                    alt="Filled red star"
+                  />
+                  <img
+                    src="assets/images/star_filled.png"
+                    alt="Filled red star"
+                  />
+                </div>
+                <div class="popular__participants">
+                  <span>2-6 participants</span>
+                </div>
+              </div>
+              <div class="popular__paragraph">
+                <p>
+                  Praeterea, ex culpa non invenies unum aut non accusatis unum.
+                  Et nihil inuitam. Nemo nocere tibi erit, et non inimicos, et
+                </p>
+              </div>
+              <div class="popular__button">
+                <button>Book this room</button>
+              </div>
+            </article>
+
+            <article>
+              <picture>
+                <img
+                  src="assets/images/card_mobile.png"
+                  alt="A hacker with a hoodie on looking at his screens that shows terminals running"
+                />
+              </picture>
+              <h2>Title of room (on-site)</h2>
+              <div class="popular__rating">
+                <div class="popular__stars">
+                  <img
+                    src="assets/images/star_filled.png"
+                    alt="Filled red star"
+                  />
+                  <img
+                    src="assets/images/star_filled.png"
+                    alt="Filled red star"
+                  />
+                  <img
+                    src="assets/images/star_filled.png"
+                    alt="Filled red star"
+                  />
+                  <img
+                    src="assets/images/star_filled.png"
+                    alt="Filled red star"
+                  />
+                  <img
+                    src="assets/images/star_filled.png"
+                    alt="Filled red star"
+                  />
+                </div>
+                <div class="popular__participants">
+                  <span>2-6 participants</span>
+                </div>
+              </div>
+              <div class="popular__paragraph">
+                <p>
+                  Praeterea, ex culpa non invenies unum aut non accusatis unum.
+                  Et nihil inuitam. Nemo nocere tibi erit, et non inimicos, et
+                </p>
+              </div>
+              <div class="popular__button">
+                <button>Book this room</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <div class="flex-group">
+        <button class="on-site-btn">On-site challenges</button>
+        <button class="online-challenges-btn">Online challenges</button>
+      </div>
+
+      <section class="story">
+        <article>
+          <p>
+            Quodsi haberent magnalia inter potentiam et divitias, et non illam
+            quidem haec eo spectant haec quoque vos omnino desit illud quo solo
+            felicitatis libertatisque perficiuntur.
+          </p>
+          <button class="story_btn">Read the full story</button>
+        </article>
+      </section>
+
+      <section class="grid">
+        <div class="group-picture">
+          <img
+            src="assets/images/group.jfif"
+            alt="Group of people looking at a screen"
+          />
+        </div>
+
+        <div class="book">
+          <h3>Play with your friends or build your team stronger at work</h3>
+          <p>
+            Praeterea, ex culpa non invenies unum aut non accusatis unum. Et
+            nihil inuitam. Nemo nocere tibi erit, et non inimicos, et
+          </p>
+          <button>Book on-site today</button>
+        </div>
+
+        <div class="single-picture">
+          <img
+            src="assets/images/single.jfif"
+            alt="A person is looking at her computer screen"
+          />
+        </div>
+        <div class="all">
+          <h3>Play online or visit our venue for one of our 25 escape rooms</h3>
+          <p>
+            Praeterea, ex culpa non invenies unum aut non accusatis unum. Et
+            nihil inuitam. Nemo nocere tibi erit, et non inimicos, et
+          </p>
+          <button>See all challenges</button>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer__info">
+          <h4>[Esc] Hacker Escape Rooms</h4>
+          <p>
+            Quodsi haberent magnalia inter potentiam et divitias, et non illam
+            quidem haec eo spectant haec quoque vos omnino desit illud quo solo
+            felicitatis libertatisque perficiuntur.
+          </p>
+        </div>
+        <div class="footer__sitemap">
+          <h4>Site map</h4>
+          <ul>
+            <li>
+              <a href="#" target="_blank" rel="noopener noreferrer"
+                >The Story</a
+              >
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="noopener noreferrer"
+                >Contact Us</a
+              >
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="noopener noreferrer">Legal</a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="noopener noreferrer"
+                >Play online</a
+              >
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="noopener noreferrer"
+                >Play on-site</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__socialmedia">
+          <h4>Follow us on</h4>
+          <ul>
+            <li>
+              <a href="#" target="_blank" rel="noopener noreferrer">Facebook</a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="noopener noreferrer"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="noopener noreferrer">Twitter</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

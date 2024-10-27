@@ -1,0 +1,82 @@
+@use "reset-css.scss";
+@use "colors.scss";
+
+.testomonial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 105px;
+  img {
+    flex-shrink: 0;
+    margin-right: 22px;
+  }
+
+  blockquote {
+    width: 343px;
+    height: 139px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+
+    .testomonial__quote {
+      font-size: 24px;
+      font-style: italic;
+      font-weight: 400;
+    }
+
+    .testomonial__name {
+      font-size: 18px;
+      font-weight: 400;
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (min-width: 770px) {
+  .testomonial {
+    margin-top: 106px;
+    margin-bottom: 108px;
+    padding-left: 110px;
+    padding-right: 107px;
+    gap: 21px;
+
+    picture {
+      img {
+        width: 96px;
+        height: 96px;
+      }
+    }
+
+    .testomonial__quote {
+      width: 407px;
+      height: 84px;
+      line-height: 30px;
+    }
+
+    .testomonial__name {
+      margin-top: 25px;
+      width: 272px;
+      height: 42px;
+    }
+
+    blockquote {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .hidden {
+    display: flex;
+  }
+  .shown {
+    display: flex;
+    margin-right: 21px;
+  }
+}
